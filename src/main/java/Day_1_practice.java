@@ -11,16 +11,15 @@ public class Day_1_practice {
                 {"akel","akel123"}
         };
 
-       for (String row[]: names) {
-           for (String info: row) {
-               if (info.equals("tantin")) {
-                   System.out.println(info);
-                   break;
-               }
-               else {
-                   System.out.println("Not Matched");
-               }
-           }
+        String[] uName = {"quelbz","obet","tantin","nek","raqeul"};
+        String[] pWord = {"quelbz123","obet123","tantin123","nek123","akel123"};
+
+       for (int x = 0; x < 5; x++) {
+            if (uName[x].equals("tantin") && pWord[x].equals("tantin123")) {
+                System.out.println("Welcome!");
+                break;
+            }
+            else System.out.println("Wrong LogIn");
        }
     }
 }
